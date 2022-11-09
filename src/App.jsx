@@ -13,6 +13,19 @@ function App() {
       setCurrent(str.slice(0,str.length-1))
     }
   }
+
+  const changeSign=()=>{
+    console.log(current)
+    if(typeof(current)=="string"){
+      const value=+current
+      setCurrent(value-value*2)
+    }
+    else{
+      const value=current
+      setCurrent(value-value*2)
+    }
+    console.log(typeof(current))
+  }
   return (
     <div className="App">
       <h2 id='title'>Calculator</h2>
@@ -24,8 +37,8 @@ function App() {
         <div className='keySection'>
           <div>
             <button id='allClearbtn' onClick={()=>setCurrent("")}>AC</button>
-            <button id='actionBtns'>%</button>
-            <button id='deletebtn' onClick={()=>evaluation()}>C</button>
+            <button id='actionBtns'onClick={()=>changeSign()}>+/-</button>
+            <button id='deletebtn' onClick={()=>evaluation()}>Del</button>
             <button id='actionBtns' onClick={()=>setCurrent(current+"/")}>÷</button>
           </div>
           <div>
