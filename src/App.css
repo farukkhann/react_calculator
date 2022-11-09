@@ -1,5 +1,11 @@
+#title{
+  margin-left: 45%;
+}
 
 .mainContainer{
+  padding: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border: 1px solid black;
   width: 300px;
   height: 400px;
@@ -19,7 +25,8 @@
   margin-top: 5px;
   text-align: end;
   overflow-x: hidden;
-  background-color: chartreuse;
+  /* background-color: chartreuse; */
+  background-color: #D2DAFF;
 }
 .screen>h1{
   margin: 0px;
@@ -42,7 +49,9 @@
 .keySection>div>button{
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   color: white;
-  background-color: black;
+  font-weight: bolder;
+  font-size: larger;
+  background-color: #153462;
   padding: 5px;
   border: none;
   width: 67px;
@@ -52,4 +61,16 @@
 .keySection>div>button:hover{
   cursor: pointer;
 
+}
+#deletebtn{
+  background-color: #E0144C;
+}
+#allClearbtn{
+  background-color: #54B435;
+}
+#submitbtn{
+  background-color: #5DA7DB;
+}
+#actionBtns{
+  color: #47B5FF;
 }
